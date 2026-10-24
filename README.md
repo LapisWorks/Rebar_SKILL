@@ -1,5 +1,7 @@
 # Rebar_SKILL
 
+[![skills.sh](https://skills.sh/b/LapisWorks/Rebar_SKILL)](https://skills.sh/LapisWorks/Rebar_SKILL)
+
 给 AI 用的 Rebar 附属开发契约。
 
 不是教程，也不是 API 文档。它约束 AI 在写 Rebar 附属时怎么干活：怎么起工程、怎么确认一个 API 真的存在、改不动的时候怎么办、什么情况下不许自己判断。
@@ -35,7 +37,15 @@ rebar-addon-dev/
 
 ## 怎么用
 
-**Claude Code / WorkBuddy 等支持 skills 的工具**
+**一行安装**
+
+```bash
+npx skills add LapisWorks/Rebar_SKILL -s rebar-addon-dev -g
+```
+
+`-g` 装到用户级，所有项目可用。去掉就装到当前项目。
+
+**手动安装**
 
 把 `rebar-addon-dev` 整个目录拷进 skills 目录：
 
